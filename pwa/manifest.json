@@ -1,0 +1,19 @@
+{
+  "name": "LANY Blog",
+  "short_name": "LANY Blog",
+  "description": "A personal blog LANY engineer",
+  "icons": [{
+    "src": "icons/pwa_icon_128.pxd",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "icons/pwa_icon_512.pxd",
+    "sizes": "512x512",
+    "type": "image/png"
+  }],
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}
