@@ -1,14 +1,14 @@
 {
-    "name": "by-blog",
-    "title": "BY Blog",
-    "author": "BY <qiubaiyingios@163.com>",
+    "name": "lany-blog",
+    "title": "LANY Blog",
+    "author": "Lany <lanyang@pivotal.net.cn>",
     "version": "1.7.0",
-    "homepage": "http://qiubaiying.github.io",
+    "homepage": "https://hilany.github.io",
     "repository": {
         "type": "git",
-        "url": "https://github.com/qiubaiying/qiubaiying.github.io"
+        "url": "https://github.com/HiLany/HiLany.github.io"
     },
-    "bugs": "https://github.com/qiubaiying/qiubaiying.github.io/issues",
+    "bugs": "https://github.com/HiLany/HiLany.github.io/issues",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
