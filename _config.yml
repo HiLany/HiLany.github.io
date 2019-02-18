@@ -4,8 +4,8 @@ SEOTitle: 兰洋的博客 | Lany Blog
 header-img: img/home-bg-desk.jpg
 email: lanyang@pivotal.net.cn
 description: "Every failure is leading towards success."
-keyword: "HiLany, Lany Blog, 兰洋的博客, lanyang, iOS, Apple, iPhone"
-url: "https://hilany.github.io"          # your host, for absolute URL
+keyword: "HiLany, Lany Blog, 兰洋的博客, lanyang, Apple, iPhone"
+url: "https://HiLany.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/HiLany/HiLany.github.io.git" # you code repository
 
@@ -64,21 +64,21 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: ab81de624d40054d85cb                            #生成的clientID
   clientSecret: 3d7debafa7082c97e068a9709b477bdf54f799c0    #生成的clientSecret
-  repo: hilany.github.io    #仓库名称
+  repo: HiLany.github.io    #仓库名称
   owner: HiLany    #github用户名
   admin: HiLany
-  distractionFreeMode: false #是否启用类似FB的阴影遮罩
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: b50bf2b12b5338a1845e33832976fd68
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-# ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-# ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_track_id: 'UA-134697146-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 

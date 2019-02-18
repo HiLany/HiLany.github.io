@@ -4,7 +4,7 @@ title:      Greenplum CommandCenter安装
 subtitle:   GreenplumCCWeb的介绍以及安装步骤
 date:       2019-02-17
 author:     LANY
-header-img: img/post-20190217-bg.jpg
+header-img: img/post-20190217-bg.png
 catalog: true
 tags:
     - Pivotal
