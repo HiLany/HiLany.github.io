@@ -1,10 +1,10 @@
 # Site settings
-title: Lany's Blog
-SEOTitle: 兰洋的博客 | Lany's Blog
+title: Lany Blog
+SEOTitle: 兰洋的博客 | Lany Blog
 header-img: img/home-bg-desk.jpg
 email: lanyang@pivotal.net.cn
 description: "Every failure is leading towards success."
-keyword: "HiLany, Lany's Blog, 兰洋的博客, lanyang, iOS, Apple, iPhone"
+keyword: "HiLany, Lany Blog, 兰洋的博客, lanyang, iOS, Apple, iPhone"
 url: "https://hilany.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/HiLany/HiLany.github.io.git" # you code repository
