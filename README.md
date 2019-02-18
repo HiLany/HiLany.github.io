@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.com/HiLany/HiLany.github.io.svg?branch=master)](https://travis-ci.com/HiLany/HiLany.github.io)
 [![codebeat badge](https://codebeat.co/badges/193de02c-ce55-491e-b5e5-bd43cfa64857)](https://codebeat.co/projects/github-com-hilany-hilany-github-io-master)
 [![GitHub issues](https://img.shields.io/github/issues/HiLany/HiLany.github.io.svg?style=flat)](https://github.com/HiLany/HiLany.github.io/issues)
-[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/home-assistant/home-assistant-iOS/blob/master/LICENSE)
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/HiLany/HiLany.github.io/blob/master/LICENSE)
 
 
 博客的搭建教程修改自 

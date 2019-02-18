@@ -160,7 +160,6 @@ rw,nodev,noatime,attr2,nobarrier,inode64,allocsize=16384k,noquota
 # hostnamectl  --static  set-hostname  gpseg2
 # hostnamectl  --static  set-hostname  gpseg3
 # hostnamectl  --static  set-hostname  gpseg4
-
 ```
 （9） 创建用户gpadmin
 
