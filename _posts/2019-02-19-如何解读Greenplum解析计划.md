@@ -12,6 +12,16 @@ tags:
     - 执行计划解析
     - SQL优化
 ---
+# 什么是Greenplum执行计划
+
+Greenplum执行计划是指所执行的SQL在数据库中的执行的先后步骤。
+
+通过检查性能不佳的查询的查询计划，以确定可能的性能调优的机会。
+
+Greenplum Database为每个查询设计查询计划。 选择正确的查询计划以匹配查询和数据结构是获得良好性能所必需的。 查询计划定义了Greenplum数据库如何在并行执行环境中运行查询。
+
+查询优化器使用数据库维护的数据统计信息来选择具有最低可能成本的查询计划。 成本在磁盘I/O中测量，以磁盘页面提取的单位显示。 目标是最小化计划的总执行成本。
+
 # 如何显示Greenplum执行计划
 
 ## EXPLAIN
@@ -25,7 +35,7 @@ explain select * from basic where id = id % 3;;
 
 执行计划显示如下图：
 
-![explain执行计划截图](../img/post-20190219-explain.png)
+![explain执行计划截图](https://raw.githubusercontent.com/HiLany/HiLany.github.io/master/img/post-20190219-explain.png)
 
 ## EXPLAIN ANALYZE
 
@@ -37,9 +47,10 @@ explain select * from basic where id = id % 3;;
 explain analyze select * from basic where id = id % 3;
 ```
 
-![explain执行计划截图](../img/post-20190219-explainanalyze.png)
+![explain执行计划截图](https://raw.githubusercontent.com/HiLany/HiLany.github.io/master/img/post-20190219-explainanalyze.png)
 
 # 如何解读Greenplum执行计划
+
 日常SQL优化过程中，最好用的手段就是通过执行计划。在Greenplum和Deepgreen中，运行 EXPLAIN 后产生的执行计划呈树状，这棵树的每一个分叉，都代表了一个单独的数据库操作，例如：表扫描、表连接、聚合、排序。
 
 由于返回数据行数是从下向上传递的，所以我们在分析执行计划时，也应该自下而上。通常来说，最底下的是表扫描操作（索引、位图索引扫描）。如果查询中涉及到连接、聚合、排序操作，那么表扫描动作的上层就会有对应的这些操作。通常最顶上的部分是节点间数据移动（重分布、广播、聚集操作），在查询过程中，这些操作会涉及到在节点间移动数据。
