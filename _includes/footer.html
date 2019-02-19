@@ -68,6 +68,17 @@
                             </span>
                         </a>
                     </li>
+
+                    {% if site.bokeyuan_username %}
+                    <li>
+                        <a target="_blank" href="https://home.cnblogs.com/u/{{ site.bokeyuan_username }}">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-stack-1x fa-inverse">博</i>
+                            </span>
+                        </a>
+                    </li>
+
                     {% endif %}
                     {% if site.github_username %}
                     <li>
@@ -93,7 +104,7 @@
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
-                    Theme on <a href="{{ site.github_repo }}">GitHub</a> |
+                    Theme on <a href="{{ site.github_repo }}">LANY</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="100px" height="20px"
