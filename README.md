@@ -56,7 +56,7 @@
 ```
 # Site settings
 title: BY Blog                    # 你的博客网站标题
-SEOTitle: 柏荧的博客 | BY Blog		# SEO 标题
+SEOTitle: 兰洋的博客 | LANY Blog		# SEO 标题
 description: "Hey"	   	   # 随便说点，描述一下
 
 # SNS settings      
@@ -101,8 +101,8 @@ tags:
 ```
 # Sidebar settings
 sidebar: true  #添加侧边栏
-sidebar-about-description: "简单的描述一下你自己"
-sidebar-avatar: /img/avatar-by.jpg     #你的大头贴，请使用绝对地址.注意：名字区分大小写！后缀名也是
+sidebar-about-description: "你的描述"
+sidebar-avatar: /img/about-lany-gentle.jpg    #你的大头贴，请使用绝对地址.注意：名字区分大小写！后缀名也是
 ```
 
 侧边栏是响应式布局的，当屏幕尺寸小于992px的时候，侧边栏就会移动到底部。具体请见bootstrap栅格系统 <http://v3.bootcss.com/css/>
@@ -110,7 +110,8 @@ sidebar-avatar: /img/avatar-by.jpg     #你的大头贴，请使用绝对地址.
 
 ### Mini About Me
 
-Mini-About-Me 这个模块将在你的头像下面，展示你所有的社交账号。这个也是响应式布局，当屏幕变小时候，会将其移动到页面底部，只不过会稍微有点小变化，具体请看代码。
+Mini-About-Me 这个模块将在你的头像下面，展示你所有的社交账号。这个也是响应式布局，当屏幕变小时候，会将其移动到页面底部，只不过会稍微有点小变化，具体请看`_layouts/page.html`页面的代码。
+
 
 ### Featured Tags
 
@@ -150,63 +151,21 @@ featured-condition-size: 1     # A tag will be featured if the size of it is mor
 设置是在 `_config.yml`文件里面的`Friends`那块，自己加吧。
 
 ```
-# Friends
 friends: [
     {
-        title: "BY Blog",
-        href: "https://qiubaiying.github.io/"
-    },
-    {
-        title: "Apple",
-        href: "https://apple.com/"
+        title: "Hux's Blog",
+        href: "http://huangxuan.me"
+    },{
+        title: "BY's Blog",
+        href: "http://qiubaiying.top"
     }
+
 ]
 ```
-
-
-### Keynote Layout
-
-HTML5幻灯片的排版：
-
-![](https://camo.githubusercontent.com/f30347a118171820b46befdf77e7b7c53a5641a9/687474703a2f2f6875616e677875616e2e6d652f696d672f626c6f672d6b65796e6f74652e6a7067)
-
-这部分是用于占用html格式的幻灯片的，一般用到的是 Reveal.js, Impress.js, Slides, Prezi 等等.我认为一个现代化的博客怎么能少了放html幻灯的功能呢~
-
-其主要原理是添加一个 `iframe`，在里面加入外部链接。你可以直接写到头文件里面去，详情请见下面的yaml头文件的写法。
-
-```
----
-layout:     keynote
-iframe:     "http://huangxuan.me/js-module-7day/"
----
-```
-
-iframe在不同的设备中，将会自动的调整大小。保留内边距是为了让手机用户可以向下滑动，以及添加更多的内容。
-
 
 ### Comment
 
 博客不仅支持 [Disqus](http://disqus.com) 评论系统,还加入了 [Gitalk](https://gitalk.github.io/) 评论系统，[支持 Markdwon 语法](https://guides.github.com/features/mastering-markdown/)，cool~
-
-#### Disqus
-
-优点：国际比较流行，界面也很大气、简洁，如果有人评论，还能实时通知，直接回复通知的邮件就行了；
-
-缺点：评论必须要去注册一个disqus账号，分享一般只有Facebook和Twitter，另外在墙内加载速度略慢了一点。想要知道长啥样，可以看以前的版本点[这里](http://brucezhaor.github.io/about.html) 最下面就可以看到。
-
-> Node：有很多人反映 Disqus 插件加载不出来，可能墙又架高了，有条件的话翻个墙就好了~
-
-**使用：**
-
-**首先**，你需要去注册一个Disqus帐号。**不要直接使用我的啊！**
-
-**其次**，你只需要在下面的 yaml 头文件中设置一下就可以了。
-
-```
-# 评论系统
-# Disqus（https://disqus.com/）
-disqus_username: qiubaiying
-```
 
 #### Gitalk
 
@@ -221,7 +180,7 @@ disqus_username: qiubaiying
 
 ### Analytics
 
-网站分析，现在支持百度统计和Google Analytics。需要去官方网站注册一下，然后将返回的code贴在下面：
+网站分析，现在支持百度统计和Google Analytics，在本博客中我用到了Google Analytics。需要去官方网站注册一下，然后将返回的code贴在下面：
 
 ```
 # Baidu Analytics

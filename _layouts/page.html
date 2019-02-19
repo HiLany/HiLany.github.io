@@ -122,7 +122,7 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
-                            <!-- add jianshu add target = "_blank" to <a> by BY -->
+
                             {% if site.jianshu_username %}
                             <li>
                                 <a target="_blank" href="https://www.jianshu.com/u/{{ site.jianshu_username }}">
@@ -153,6 +153,18 @@ layout: default
                                 </a>
                             </li>
                             {% endif %}
+
+                            {% if site.bokeyuan_username %}
+                            <li>
+                                <a target="_blank" href="https://home.cnblogs.com/u/{{ site.bokeyuan_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-stack-1x fa-inverse">博</i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
+
                             {% if site.weibo_username %}
                             <li>
                                 <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}">
