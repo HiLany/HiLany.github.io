@@ -12,7 +12,8 @@ tags:
     - Cloud Foundry
 ---
 # PCF Blue-GreenDeployment
-##What's Blue-GreenDeployment?
+
+## What's Blue-GreenDeployment?
 
 > Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments called Blue and Green.
 
@@ -23,7 +24,7 @@ tags:
 > This technique can eliminate downtime due to application deployment. In addition, blue-green deployment reduces risk: if something unexpected happens with your new version on Green, you can immediately roll back to the last version by switching back to Blue.
 
 
-##Blue-Green Deployment whih Cloud Foundary Example
+## Blue-Green Deployment whih Cloud Foundary Example
 Prerequisites:
 
 * need know Deploying with Application Mantfest.yml.
@@ -31,7 +32,7 @@ Prerequisites:
 * must have the CLI and MAVEN installed.
 * must provious for simple application that you push.
 
-###Step 1: Push App
+### Step 1: Push App
 
 Use the CLI push the application,name the "Blue" with the hostname 'example-demo'.
 
@@ -45,7 +46,7 @@ As shown in the graphic below:
 
 ![blue](https://raw.githubusercontent.com/HiLany/HiLany.github.io/master/img/post-2019-0321-2.png)
 
-###Step 2: Update App and Push
+### Step 2: Update App and Push
 
 Make a change to your application.First,replace the word "Blue" with "Green",
 then use `mvn package` to repackage your application, use `cf push` to push your app again,name the "Green" with the hostname 'example-demo-temp'.
@@ -60,7 +61,8 @@ As shown in the graphic below:
 
 ![blue-green](https://raw.githubusercontent.com/HiLany/HiLany.github.io/master/img/post-2019-0321-1.png) 
 
-###Step 3: Map Origin route to Green
+### Step 3: Map Origin route to Green
+
 Now, both of application you push are running on PCF,switch the router so all incoming requests go to the Green app and the Blue app. Do this by mapping the original URL route (example-demo.apps.xkpcf.local) to the Green application using the cf map-route command.
 
 ```
@@ -74,7 +76,8 @@ After command:
 
 ![map](https://raw.githubusercontent.com/HiLany/HiLany.github.io/master/img/post-2019-0321-4.png)
 
-###Step 4 : Unmap route to Blue
+### Step 4 : Unmap route to Blue
+
 Once you verify Green is running as you excepted,you need stop routing requests to Blue, use command below:
 
 ```
@@ -84,7 +87,8 @@ After command ,the CF router stops sending requests to Blue and All Traffic for 
 
 ![unmap](https://raw.githubusercontent.com/HiLany/HiLany.github.io/master/img/post-2019-0321-5.png)
 
-###Step 5 : Remove temporary route to Green
+### Step 5 : Remove temporary route to Green
+
 You can use `cf unmap-route` to remove the temporary route `example-demo-temp.apps.xkpcf.local` from Green.
 
 ```
