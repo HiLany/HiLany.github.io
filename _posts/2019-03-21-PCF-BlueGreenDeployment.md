@@ -4,7 +4,6 @@ title:      PivotalCloudFoundry(二)
 subtitle:   PCF Blue-Green Deployment
 date:       2019-03-21
 author:     LANY
-header-img: img/post-20190306-bg.jpg
 catalog: true
 tags:
     - Pivotal

@@ -4,7 +4,6 @@ title:      Greenplum表的种类、原理以及如何选择
 subtitle:   Greenplum行存、列存、AO表的原理介绍和选择
 date:       2019-02-22
 author:     LANY
-header-img: img/post-20190217-bg.png
 catalog: true
 tags:
     - Pivotal

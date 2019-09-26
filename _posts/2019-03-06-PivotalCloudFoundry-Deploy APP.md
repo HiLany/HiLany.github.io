@@ -4,7 +4,6 @@ title:      PivotalCloudFoundry(一)
 subtitle:   Deploy App To CloudFoundry
 date:       2019-03-06
 author:     LANY
-header-img: img/post-20190306-bg.jpg
 catalog: true
 tags:
     - Pivotal
