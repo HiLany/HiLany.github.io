@@ -4,7 +4,6 @@ title:      如何解读Greenplum执行计划
 subtitle:   Greenplum执行计划的介绍以及解读
 date:       2019-02-19
 author:     LANY
-header-img: img/post-20190217-bg.png
 catalog: true
 tags:
     - Pivotal

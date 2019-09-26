@@ -4,7 +4,6 @@ title:      Greenplum4.3.12安装
 subtitle:   Greenplum大数据平台安装配置手册
 date:       2019-02-17
 author:     LANY
-header-img: img/post-20190217-bg.png
 catalog: true
 tags:
     - Pivotal
