@@ -10,7 +10,8 @@ tags:
     - Greenplum
     - MPP
     - 大数据
-    - 实时监控
+	- 实时监控
+	- 软件安装
 ---
 # Greenplum CommandCenter是什么?
 
