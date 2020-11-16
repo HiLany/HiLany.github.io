@@ -6,7 +6,7 @@ date:       2020-11-10
 author:     LANY
 catalog: true
 tags:
-    - Kuberbetes
+    - kubernetes
     - Kubeflow
 ---
 
