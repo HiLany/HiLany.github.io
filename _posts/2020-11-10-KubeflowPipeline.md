@@ -61,7 +61,7 @@ pipelines实现了一个工作流模型。所谓工作流，或者称之为流�
 
 其步骤图如下：
 
-![概念关系图](https://raw.githubusercontent.com/HiLany/HiLany.github.io/master/img/post-2020-1110-3.png)
+![提交流程](https://raw.githubusercontent.com/HiLany/HiLany.github.io/master/img/post-2020-1110-4.png)
 
 ## pipeline执行过程中涉及到的概念
 
@@ -113,11 +113,34 @@ kubeflow pipeline官方提供的python sdk包含以下几个模块：
 
 -`kfp.compiler`
 
+该模块中包含了用来编译描述pipeline的python代码到一个pipeline service可以处理的静态文件中的方法和类。Pipeline Service会将这个静态文件转换成一组k8s资源。
+
 -`kfp.components`
+
+该模块包含了与pipeline组件进行交互的方法和类。比如组件的构建以及导入导出。
 
 -`kfp.dsl`
 
+用来定义ContainerOp以及VolumeOp等真正和K8s交互的模块。是一个比较重要的模块。
+
 -`kfp.Client`
 
+负责与pipeline service进行交互，比如提交、上传、运行pipeline等等。
+
+-`extension`
+
+主要是云上的一些扩展模块用来支持kubeflow pipeline。比如gcp、aws等等。
+
+-`diagnose_me modules`
+
+环境诊断工具。
 
 ### kubeflow pipeline cli tools
+
+代替sdk中的一些api，可以直接使用cli来进行操作。
+
+比如`kfp diagnose_me`、`kfp pipeline <COMMAND>`、`kfp run <COMMAND>`、`kfp --endpoint <ENDPOINT>`
+
+### pipeline rest api
+
+[kubeflow pipeline rest api](https://www.kubeflow.org/docs/pipelines/reference/api/kubeflow-pipeline-api-spec/)
